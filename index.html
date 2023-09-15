@@ -4,168 +4,559 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="My work.css">
-    <title>MY PROJEST DEFENCE WORK</title>
+    <link rel="stylesheet" href="../fontawesome-free-6.1.1-web/css/all.css">
+    <!-- <link rel="stylesheet" href="Index2.css"> -->
+    <title>JAYTRANSIT</title>
+    <style>
+        *{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* ============BANNER=========== */
+#banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(Image/7\ series\ facelift\ front.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+} 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 13px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+header .jay{
+    font-size: 1.3rem;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+header span{
+    color: darkorange;
+}
+#banner .intro{
+    width: fit-content;
+    margin: 200px auto;
+    text-align: center;
+}
+#banner div h1{
+    color: darkorange;
+    font-size: 2.3rem;
+}
+#banner div p{
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 1.8rem;
+}
+.btn{
+    width: fit-content;
+    padding: 10px 16px;
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 1.4rem;
+}
+
+/* =============ABOUT SECTION============= */
+#about{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: rgb(195, 214, 221);
+    height: auto;
+    text-align: center;
+}
+#about h1{
+    font-size: 1.8rem;
+}
+#about p{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+#about article{
+    flex-basis: 20%;
+    background-color: white;
+}
+.about .fa{
+    padding: 20px;
+    border-radius: 50%;
+    background-color: darkorange;
+    margin: 20px;
+}
+.about h2{
+    font-size: 1.4rem;
+}
+.about ul{
+    list-style-type: none;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+    /*========TEAM MEMBERS=======*/
+#team{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+#team h2{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.team{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.team article{
+    flex-basis: 20%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.team article img{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+.team h3{
+    font-size: 1.4rem;
+}
+.team p{
+    font-size: 1.3rem;
+}
+.team article div{
+    flex-basis: 50%;
+}
+
+    /*=======CUSTOMER REVIEW=======*/
+#customer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(195, 214, 221);
+}
+#customer h2{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.customer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.customer article{
+    flex-basis: 30%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.customer article img{
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+}
+.customer article .info{
+    text-align: center;
+    flex-basis: 40%;
+}
+.customer article .text{
+    flex-basis: 50%;
+    display: grid;
+    gap: 10px;
+}
+.info p{
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+.text p{
+    font-size: 1.4rem;
+}
+.text .fa-quote-right{
+    justify-self: right;
+}
+
+
+/*=========CONTACT US=========*/
+#contact{
+    padding-top: 40px;
+    padding-bottom: 40px ;
+}
+#contact h2{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.contact{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#contact > p{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+#contact article p{
+    font-size: 1.4rem;
+}
+.contact form{
+    flex-basis: 55%;
+}
+
+.contact form label{
+
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+.contact input, textarea{
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(195, 214, 221);
+}
+.contact .btn{
+    background-color: rgb(193, 219, 230);
+    margin-top: 20px;
+    border: none;
+}
+.contact article{
+    flex-basis: 40%;
+}
+.contact article .fa, .contact article .fab{
+    font-size: 1.5rem;
+    color: darkorange;
+    margin-right: 20px;
+}
+.contact article p{
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ 
+/* ===========FOOTER SECTION========*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: rgb(195, 214, 221);
+}
+footer a{
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+footer h1{
+  font-size: 1.6rem;
+  text-align: center;
+}
+footer p{
+    margin-bottom: 20px;
+}
+footer span{
+    color: darkorange;
+}
+.social-media{
+  display: flex;
+  gap: 20px;
+}
+footer .social-media{
+    justify-content: center;
+}
+.social-media .fab{
+    font-size: 1.8rem;
+    color: darkorange;
+}
+
+/* =========MEDIA QUERY=========*/
+@media screen and (max-width: 850px) {
+    .about{
+        flex-direction: column;
+    }
+    .about article{
+       width: 60%;
+       margin: auto;
+    }
+    .team{
+        display: grid;
+    }
+    .customer{
+        flex-direction: column;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    footer{
+        display: grid;
+        justify-content: center;
+        gap: 20px;
+    } 
+}
+
+/* ==========HAMBURGER=========== */
+@media screen and (max-width: 680px){
+    header ul{
+        display: grid;
+        text-align: center;
+        height: 60vh;
+        width: 60%;
+        background-color: darkorange;
+        position: fixed;
+        top: -105vh;
+        right: 0;
+        align-items: center;
+        transition: 0.8s;
+    }
+    header .menu-icon{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        outline: 2px solid black;
+        cursor: pointer;
+    }
+    header .menu-icon::before{
+        position: absolute;
+        content: "";
+        width: 32px;
+        height: 32px;
+        outline: 2px solid black;
+        border-radius: 50%;
+        animation: blink 2s infinite;
+    }
+    header nav:hover ul{
+       top: 0;
+    }
+    @keyframes blink {
+        0%{
+            transform: scale(1.3);
+            opacity: 0;
+        }
+        50%{
+            transform: scale(1);
+            opacity: 1;
+        }
+        100%{
+            transform: scale(1.3);
+            opacity: 0;
+        }
+    }
+    header .hamburger{
+       position: relative;
+       width: 24px; 
+       height: 3px;
+       border-radius: 2px;
+       background-color: #000;
+    }
+    header .hamburger::before{
+       position: absolute;
+       content: "";  
+       width: 100%; 
+       height: 3px;
+       background-color: inherit;
+       top: -6px;
+    }
+    header .hamburger::after{
+        position: absolute;
+        content: "";
+        width: 100%; 
+        height: 3px;
+        background-color: inherit;
+        top: 6px;
+     }
+}
+
+ 
+    </style>
 </head>
-
-<body>
+<body> 
     <main>
-        <!-- ========SECTION BANNER========= -->
-
+        <!--======== BANNER SECTION =======-->
         <section id="banner">
             <header>
-            <a href="index.html" class="lens"><h1>LENS<span>-TACLE</span></h1></a>
+            <a href="Index.html" class="jay"><h1>JAY<span>TRANSIT</span></h1></a>
             <nav>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="#about">ABOUT  </a></li>
-                    <li><a href="plans.html">OFFERS</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="Index.html">HOME</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                      <li><a href="booking.html">BOOKINGS</a></li> 
+                    <li><a href="#customer">REVIEW</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
                 </ul>
                 <div class="menu-icon">
-                 <div class="hamburger"></div>
+                  <div class="hamburger"></div>
                 </div>
             </nav>
-         </header>
-
-         <div class="intro">
-            <h1>BEYOND WHAT YOU ARE SEEING</h1>
-            <p>With lens-tacle, you never walk alone</p>
-                <button class="btn">SUBSCRIBE</button>
-        
-                <button class="btn">FREE QUOTE</button>
-        
-         </div>
+            </header>
+            <div class="intro">
+                <h1>WELCOME TO JAYTRANSIT</h1>
+                <P>Your number one, when it comes to travelling</P>
+                <a href="" class="btn">Explore</a>
+            </div>
         </section>
-        </main>
-        <!-- =========SECTION BANNER ENDS======== -->
 
-                
-        <!-- ========ABOUT SECTION========== -->
+        <!--======== ABOUT SECTION =======-->
         <section id="about">
             <h1>ABOUT US</h1>
-            <div class="graph">
-         <p>
-            Len-tacle is an optometry online eye clinic, basically for individuals with eye challenges.
-          It will interst you to know, we are a non-governmental organisation but made up of passionate proffesionals
- n          with the desire to help those who do not see how beautiful the world and things around them are due to eye
-          defect.
-            At Lens-tacle, you will have the priviledge of contacting world reknown optometricians, ask direct question and 
-          get a guidline answers.  
-         </p>
-            </div>
-
-
-            
-            
-            <div class="aboutus">
+            <p>Jaytransit provides you with a comfortable and affordable means of commercial traveling</p>
             <div class="about">
-                <img src="../MY WORK/Images/mentor-gaa5b2ef64_1920.jpg" class="dav"><br>
-                 <h3>David Martin</h3><br>
-                 <h4>CEO & Founder</h4><br>
-                 <p class="graph"> A father and a Mentor from Illinois state Univerity With a PHD and a MSC in
-                    optometry. A UN global ambassador. His passionate about how far people can see. </p>
-               <div>
-                   <button class="btn">CONTACT</button>
-               </div>
-            </div>
-
-            <div class="about">
-                <img src="../MY WORK/Images/business-696076_1280.jpg" class="alex">
-                 <h3>Alex Doe</h3><br>
-                 <h4>Critical Consultant</h4><br>
-                    <p class="graph">Born and breed by an exceptional grand parents. His grand parents were his source
-                    of inspiration. An award winning optometrician from Maximillina State Univerity, Germany </p>
-                 <div>
-                     <button class="btn">CONTACT</button>
-                 </div>
-            </div>
-
-            <div class="about">
-                <img src="../MY WORK/Images/man-g9f2a701ca_1920.jpg" class="tony">
-                 <h3>Tony Fenyi</h3><br>
-                 <h4>Med/Surgical Director</h4><br>
-                 <p class="graph"> Nigerian decent, born and breed in the United State. He has made it a life long goal to help as many
-                   as he could around the globe. Longest standing surgeon. </p>
-                   <div>
-                       <button class="btn">CONTACT</button>
-                   </div>
-            </div>
-        </div>
-    </section>
-             <!-- ========ABOUT SECTION ENDS HERE======== -->
-                 
-
-
-
-             <!--=======CARE TIPS SECTION========  -->
-         <section id="tips">
-             <div>
-                <h2>CARE TIPS</h2>
-                <p>Our team which are mainly but proffesionals have decided to go further as to know what are the
-                   things indivduals with eye challanges find difficult keeping up with and in what more than one way
-                   can appropriate measures remedy such situations.</p>
-             </div>
-             <form action="#">
-             <div id="subscribe">
-                <input type="email" placeholder="EMAIL" id="email" required>
-                <button class="sub">SUBSCRIBE</button>
-             </div>
-            </form>
-         </section> 
-         
-         
-              <!-- ======FOOTER SECTION======= -->
-          <footer>
-            <div id="footer-all">
-            
-              <article>
-                    <a id="topic" href="index.html">LENS<span>-TACLE</span></a>
-                    <br>
-                    <br>
-                    <p id="first-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo minus quos veniam quisquam debitis natus dicta deserunt aliquam inventore perspiciatis doloribus eius consequuntur illum labore, quae minima rerum suscipit optio.</p>
-                    <br>
-                    <div class="social">
-                        <i><a href="#" class="fa fa-twitter"></a></i>
-                        <i><a href="#" class="fa fa-facebook"></a></i>
-                        <i><a href="#" class="fa fa-instagram"></a></i>
-                        <i><a href="#" class="fa fa-linkedin"></a></i>
-                    </div>
-                    <br>
-                    <br>
-                    <p>&copy; Copyright LENS-TACLE 2023. All Rights Reserved</p>
-                    <br>
-                    <p>Designed By Favour</p>
+                <article class="box1">
+                    <i class="fa fa-code-branch"></i>
+                    <h2>BRANCH</h2>
+                    <ul>
+                        <li>Owerri</li>
+                        <li>Abuja</li>
+                        <li>Port Harcourt</li>
+                        <li>Lagos</li>
+                    </ul>
                 </article>
-                <section>
-                    <div id="link">
-                        <h1>Useful Links</h1>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="plans.html">Offers</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div id="services">
-                        <h1>Our Offers</h1>
-                        <ul>
-                            <li><a href="#">Basic</a></li>
-                            <li><a href="#t">Premium</a></li>
-                            <li><a href="#">Pro</a></li>
-                        </ul>
-                    </div>
-                    <div id="reach-out">
-                        <h1>Contact Us</h1>
-                        <ul>
-                        <li><a href="https://www.google.com/maps/place/Texas,+USA/@31.0699833,-105.3711919,6z/data=!3m1!4b1!4m6!3m5!1s0x864070360b823249:0x16eb1c8f1808de3c!8m2!3d31.9685988!4d-99.9018131!16zL20vMDdiX2w?authuser=0&entry=ttu">Texas USA</a></li>
-                        <li>Phone: <a href="tel:09077898380">+234 9077898380</a></li>
-                        <li>Email: <br><a href="mailto:favourifunanya249@gmail.com">favourifunanya249@gmail.com</a></li>
-                        </ul>
-                    </div>
-                </section>
+
+                <article class="box2">
+                    <i class="fa fa-taxi"></i>
+                    <h2>VEHICLES</h2>
+                    <ul>
+                        <li>Coaster</li>
+                        <li>18 seater bus</li>
+                        <li>Sienna</li>
+                        <li>Taxi</li>
+                    </ul>
+                </article>
+                
+                <article class="box3">
+                    <i class="fa fa-truck-fast"></i>
+                    <h2>SERVICES</h2>
+                    <ul>
+                        <li>24 hours</li>
+                        <li>Sun-Sat</li>
+                        <li>Reliable</li>
+                        <li>Fast</li>
+                    </ul>
+                </article>
+            </div>            
+        </section>
+
+        <!--= ======TEAM MEMBERS SECTION======= -->
+        <section id="team">
+            <h2>TEAM MEMBERS</h2>
+            <div class="team">
+                 <article class="box4">
+                    <img src="../PROJECT2/Image/employee1.jpg" alt="team 1">
+                    <div><h3>MARCUS</h3>
+                    <p>Managing Director</p></div>
+                 </article>
+                 <article class="box6">
+                    <img src="../PROJECT2/Image/employee2.jpg" alt="team 3">
+                    <div><h3>RAY</h3>
+                    <p>Head of Operations</p></div>
+                 </article>
+                 <article class="box7">
+                    <img src="../PROJECT2/Image/team1.jpg" alt="team 4">
+                    <div><h3>JOE</h3>
+                    <p>Human Resource Manager</p></div>
+                 </article>
             </div>
-            </footer>
+        </section>
+
+            <!--===== CUSTOMER REVIEW SECTION===== -->
+        <section id="customer">
+            <h2>CUSTOMER REVIEWS</h2>
+            <div class="customer">
+             <article>
+                <div class="info">
+                    <img src="../PROJECT2/Image/team2.jpg" alt="cutomer 1">
+                    <p>Izzy</p>
+                </div>
+
+                <div class="text">
+                 <i class="fa fa-quote-left"></i>   
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate est exercitationem quae laudantium aspernatur incidunt cumque quasi, maxime numquam obcaecati!</p>
+                 <i class="fa fa-quote-right"></i>
+                </div>
+             </article>
+
+             <article>
+                <div class="info">
+                    <img src="../PROJECT2/Image/team4.jpg" alt="cutomer 2">
+                    <p>LUNA</p>
+                </div>
+
+                <div class="text">
+                <i class="fa fa-quote-left"></i>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate est exercitationem quae laudantium aspernatur incidunt cumque quasi, maxime numquam obcaecati!</p>
+                 <i class="fa fa-quote-right"></i>
+                </div>
+             </article>
+            </div>
+        </section>
+
+            <!-- =====CONTACT US SECTION====== -->
+        <section id="contact">
+             <h2>CONTACT US</h2>
+             <p>Reach out to us</p>
+             <div class="contact">
+                <form action="">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name">
+                    <label for="text">Email</label>
+                    <input type="text" id="email">
+                    <label for="text">MEASSAGE</label>
+                    <textarea cols="30" rows="10"></textarea>
+                    <button type="submit" class="btn">SUBMIT</button>
+                </form>
+                <article>
+                    <p>You can also reach out to us via our phone number or any of our social media handles.</p>
+                    <p><i class="fa fa-envelope"></i>favourifunanya249@gmail.com</p>
+                    <p><i class="fa fa-phone-square"></i>09077898380</p>
+                    <div class="social-media">
+                      <a href=""><i class="fab fa-facebook"></i></a>
+                      <a href=""><i class="fab fa-twitter"></i></a> 
+                      <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </article>
+             </div>
+        </section>
+
+         <!-- ====FOOTER SECTION===== -->
+        <footer>
+            <a href="Index.html"><h1>JAY<span>TRANSIT</span></h1></a>
+            <p>COPYRIGHT &copy; JAYTRANSIT</p>
+            <div class="social-media">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+              </div>
+        </footer>
+    </main>
 </body>
-</html>
+</html> 
